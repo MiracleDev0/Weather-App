@@ -26,12 +26,17 @@ const WeatherDisplay = ({ weatherData, cityName }) => {
     <div>
       <h2>{cityName}</h2> {/* Display city and country */}
       <div className='data-container'>
-      <p>Temperature: <br /> {temperature}°C</p>
-      <p>Windspeed: <br /> {windspeed} km/h</p>
-      <p>Wind Direction: <br /> {winddirection}°</p>
-      <p>Condition: <br /> {weatherDescription}</p>
-      <p>Timezone: <br /> {timezone}</p>
+        <div className='data-container1'>
+            <p>Temperature <br /> <br />  {temperature}°C</p>
+            <p>Windspeed <br /> <br />  {windspeed} km/h</p>
+        </div>
+        <div className='data-container2'>
+            <p>Wind Direction <br /> <br /> {winddirection}°</p>
+            <p>Condition <br /> <br /> {weatherDescription}</p>
+        </div>
+        <p>Timezone <br /> <br /> {timezone}</p>
       </div>
+      
       
     </div>
   );
